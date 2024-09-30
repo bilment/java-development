@@ -22,15 +22,15 @@ public class SandwichShop {
         }
 
         double currentPrice = 5.45 - (5.45 * 0.10);
-        double currentPrice2 = 8.95 - (8.95 * 0.20);
-        double currentPrice3 = 5.45 - (5.45 * 0.10);
+        double currentPrice2 = 5.45 - (5.45 * 0.20);
+        double currentPrice3 = 8.95 - (8.95 * 0.10);
         double currentPrice4 =  8.95 - (8.95 * 0.20);
 
         if (firstChoose == 1) {
             if (customerAge <= 17) {
                 System.out.println("Your price is 5.45 but you got %10 discount, total price is: " + currentPrice);
             } else if (customerAge >= 65) {
-                System.out.println("Your price is 8.95 but you got %20 discount, total price is: " + currentPrice2);
+                System.out.println("Your price is 5.45 but you got %20 discount, total price is: " + currentPrice2);
             } else {
                 System.out.println("Here is your price: " + regularSandwich);
             }
