@@ -16,8 +16,15 @@ public class PayrollCalculator {
         System.out.println("Enter pay rate: ");
         float payRate = input.nextFloat();
 
+        double grossPay;
+            if (hours>40) {
+                grossPay = 40 * payRate + (hours - 40) * 1.5 * payRate;
+            }else {
+                grossPay = hours * payRate;
+            }
 
-        System.out.println("Name: " + name + " And salary: " + (hours * payRate));
+        System.out.println("Name: " + name);
+        System.out.println("Gross Pay: $" + String.format("%.2f", grossPay));
 
 
 
