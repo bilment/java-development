@@ -25,6 +25,7 @@ public class TheaterReservations {
 
         System.out.println("What date will you be coming (MM/dd/yyyy):");
         String userInput = scanner.nextLine();
+
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate theaterDay = LocalDate.parse(userInput, formatter);
 
@@ -32,7 +33,7 @@ public class TheaterReservations {
         int ticket = scanner.nextInt();
 
 
-        System.out.println(ticket + " tickets reserved for " + theaterDay + "under" + name);
+        System.out.println(ticket + " tickets reserved for " + theaterDay + " under " + name);
 
 
 
