@@ -7,6 +7,7 @@ public class AdressBuilder {
         Scanner scanner = new Scanner(System.in);
         StringBuilder information = new StringBuilder();
 
+        // Get billing address information
         System.out.println("Full name?");
         String fullName = scanner.nextLine();
 
@@ -22,6 +23,7 @@ public class AdressBuilder {
         System.out.println("Billing Zip?");
         String billingZip = scanner.nextLine();
 
+        // Get shipping address information
         System.out.println("Shipping Street?");
         String shippingStreet = scanner.nextLine();
 
