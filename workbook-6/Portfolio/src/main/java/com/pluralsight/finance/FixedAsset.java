@@ -1,8 +1,8 @@
 package com.pluralsight.finance;
 
 public abstract class FixedAsset implements Valuable {
-    protected String name;
-    protected double value;
+    public String name;
+    public double value;
 
     public FixedAsset(String name, double value) {
         this.name = name;
