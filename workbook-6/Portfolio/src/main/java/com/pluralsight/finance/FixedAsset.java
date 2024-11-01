@@ -1,8 +1,8 @@
 package com.pluralsight.finance;
 
 public abstract class FixedAsset implements Valuable {
-    public String name;
-    public double value;
+     String name;
+     double value;
 
     public FixedAsset(String name, double value) {
         this.name = name;
@@ -10,7 +10,5 @@ public abstract class FixedAsset implements Valuable {
     }
 
     @Override
-    public double getValue() {
-        return value;
-    }
+    public abstract double getValue();
 }
