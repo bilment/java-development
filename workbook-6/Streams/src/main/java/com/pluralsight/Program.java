@@ -10,7 +10,7 @@ public class Program {
         List<Person> people = new ArrayList<>();
 
         // Step 1, the list of 10 people.
-        
+
         people.add(new Person("Scarlett", "Johnson", 32));
         people.add(new Person("Jane", "Smith", 30));
         people.add(new Person("Michael", "Johnson", 45));
